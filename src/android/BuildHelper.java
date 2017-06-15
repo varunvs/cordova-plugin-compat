@@ -51,7 +51,7 @@ public class BuildHelper {
     {
         try
         {
-            Class<?> clazz = Class.forName(ctx.getBasePackageName() + ".BuildConfig");
+            Class<?> clazz = Class.forName("com.aconex.field.mobile.BuildConfig");
             Field field = clazz.getField(key);
             return field.get(null);
         } catch (ClassNotFoundException e) {
